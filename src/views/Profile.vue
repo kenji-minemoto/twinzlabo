@@ -21,6 +21,16 @@
             <br><br>Application Frameworks：Ruby on Rails, Vue.js
           </p>
         </b-col>
+        <b-col>
+          <p>
+            Name：YUMA MINEMOTO
+            <br><br>Located：Tokyo
+            <br><br>Contact：kenji_cat_15@yahoo.co.jp
+            <br><br>Business Details：Web Design & Coding
+            <br><br>Coding Languages：HTML, CSS, Javascript, Ruby
+            <br><br>Application Frameworks：Ruby on Rails, Vue.js
+          </p>
+        </b-col>
       </b-row>
     </b-container>
   </div>
