@@ -1,14 +1,44 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<div id="app">
+  <Logo id="logo" />
+  <Nav />
+  <b-container>
+    <transition mode="out-in">
+      <router-view />
+    </transition>
+  </b-container>
+  <Footer />
+</div>
 </template>
 
-<style>
+<script>
+import Footer from './components/Footer.vue'
+import Logo from './components/Logo.vue'
+import Nav from './components/Nav.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Footer,
+    Logo,
+    Nav
+  },
+  methods: { // スクロールメソッド
+    clickSmoothScroll () {
+      event.preventDefault()
+      this.$SmoothScroll(
+        document.querySelector('#logo'),
+        1500,
+        null,
+        null,
+        'y'
+      )
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,16 +47,44 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+pre {
+  width: 100%;
+  padding-top: 100px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+a {
+  text-decoration: none;
+  color: #888888;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+a:hover {
+  opacity: 0.8;
+}
+
+#icon {
+  width: 30px;
+  height: 30px;
+}
+
+.v-enter {
+  transform: translate(-100px, 0);
+  opacity: 0;
+}
+.v-enter-to {
+  opacity: 1;
+}
+.v-enter-active {
+  transition: all 1s 0s ease;
+}
+.v-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.v-leave-to {
+  transform: translate(100px, 0);
+  opacity: 0;
+}
+.v-leave-active {
+  transition: all .5s 0s ease;
 }
 </style>
