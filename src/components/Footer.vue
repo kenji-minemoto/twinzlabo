@@ -2,48 +2,40 @@
 <footer>
   <div id="nav">
     <router-link to="/" class="tab" exact>Home</router-link>
-    <router-link to="/myprofile" class="tab" exact>My Profile</router-link>
+    <router-link to="/profile" class="tab" exact>Profile</router-link>
     <router-link to="/gallery" class="tab" exact>Gallery</router-link>
     <router-link to="/contact" class="tab" exact>Contact</router-link>
-    <p>© KENJI_MINEMOTO All rights reserved.</p>
+    <p>© TwinzLabo All rights reserved.</p>
   </div>
 </footer>
 </template>
 
 <style scoped>
+footer {
+  min-height: 50vh;
+  position: relative;
+}
 #nav {
-  background-color: white;
-  padding: 40px 0 50px 0;
-  padding-left: 8%;
-  text-align: left;
-  margin-top: 0px;
   width: 100%;
+  padding: 20px 10px 10px 0;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  bottom: 0;
+  position: absolute;
 }
 
 #nav .tab {
-  padding-left: 50px;
-  font-weight:lighter;
+  padding-right: 30px;
   color: black;
-  float: left;
-}
-
-#nav p {
-  color: black;
+  font-weight: bold;
   font-size: 10px;
-  text-align: right;
-  padding-right: 13%;
 }
 
 #nav a.router-link-exact-active {
   color: rgb(163, 163, 163);
 }
 
-#icon {
-  margin-top: 100px;
-  height: 30px;
-  width: 30px;
-  color: rgb(163, 163, 163);
-  text-align: center;
+#nav p {
+  font-size: 7px;
 }
-
 </style>

@@ -74,46 +74,4 @@ export default {
 
 <style scoped>
 
-h2.serivce {
-  text-align: center;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  font-size: 50px;
-  font-weight: 100;
-}
-ul {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
-ul li {
-  list-style: none;
-}
-
-.right-content {
-  width: 45%;
-  float: right;
-}
-
-.left-content {
-  width: 45%;
-  float: none;
-}
-
-li h4 {
-  text-align: center;
-  font-size: 40px;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-li p {
-  font-size: 20px;
-  padding-top: 50px;
-  text-align: left;
-}
-
-.top-image {
-  width: 100%;
-  height: 500px;
-  }
 </style>

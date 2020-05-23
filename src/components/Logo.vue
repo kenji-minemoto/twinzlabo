@@ -1,13 +1,14 @@
 <template>
-  <p>KENJI<br>MINEMOTO</p>
+  <p>Twinz<br>Labo</p>
 </template>
 
 <style scoped>
 p {
   text-align: left;
-  padding-top: 50px;
-  padding-left: 140px;
-  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 20px;
   cursor: pointer;
+  letter-spacing: 0.2em
 }
 </style>

@@ -9,12 +9,12 @@
 
 <style scoped>
 #nav {
-  padding: 30px 100px 50px 0;
+  padding: 30px 10px 50px 0;
   text-align: right;
 }
 
 #nav .tab {
-  padding-right: 50px;
+  padding-right: 30px;
   color: black;
   font-weight: bold;
 }
