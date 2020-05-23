@@ -25,7 +25,7 @@ export default {
   },
   methods: { // スクロールメソッド
     clickSmoothScroll () {
-      event.preventDefault
+      event.preventDefault()
       this.$SmoothScroll(
         document.querySelector('#logo'),
         1500,
